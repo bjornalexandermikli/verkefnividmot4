@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 
 public class PlayerController {
     askrifandi a = new askrifandi();
-    lagaListar lagalistar = new lagaListar();
+    lagaListar lagaListar = new lagaListar();
 
     /**
      * Sér um að birta Dialog og fá nafn frá notanda
@@ -24,6 +24,6 @@ public class PlayerController {
     public void onVeljaLista(ActionEvent actionEvent) {
         Button b = (Button) actionEvent.getSource();
         int i = GridPane.getColumnIndex(b);
-        ViewSwitcher.switchTo(View.LISTI, lagalistar.get(i));
+        ViewSwitcher.switchTo(View.LISTI, lagaListar.get(i));
     }
 }

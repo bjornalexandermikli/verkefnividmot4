@@ -28,4 +28,8 @@ public class Lag {
     public String getMynd() {
         return mynd;
     }
+
+    public String toString() {
+        return lag;
+    }
 }

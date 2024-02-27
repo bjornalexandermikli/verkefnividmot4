@@ -1,2 +1,2 @@
-media/Eftirpartý.wav sample-192s 192000 media/mynd1.png
-media/Jupiter.wav sample-212s 212000 media/mynd2.png
+media/Eftirpartý.wav Eftirpartý-192s 192000 media/mynd1.png
+media/Jupiter.wav Eftirpartý-212s 212000 media/mynd2.png

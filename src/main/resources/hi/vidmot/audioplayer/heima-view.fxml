@@ -28,10 +28,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
         <children>
-            <Button onAction="#onVeljaLista" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="51.0" prefWidth="151.0" text="Lagalisti 1" />
+            <Button onAction="#onVeljaLista" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="51.0" prefWidth="151.0" text="Lagalisti 1" GridPane.columnIndex="0" />
             <Button onAction="#onVeljaLista" mnemonicParsing="false" prefHeight="51.0" prefWidth="151.0" text="Lagalisti 2" GridPane.columnIndex="1" />
-            <Button onAction="#onVeljaLista" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Lagalisti 3" GridPane.rowIndex="1" />
-            <Button onAction="#onVeljaLista" mnemonicParsing="false" prefHeight="50.0" prefWidth="155.0" text="Lagalisti 4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         </children>
     </GridPane>
 </VBox>
