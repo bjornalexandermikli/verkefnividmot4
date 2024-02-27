@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.vidmot.ListiController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="599.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="fxListView" onMouseClicked="#onValidLag" prefHeight="200.0" prefWidth="800.0" />
+      <ImageView fx:id="fxValidLagMynd" fitHeight="84.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="fxProgressBar" prefHeight="21.0" prefWidth="800.0" progress="0.0" />
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="fxPlayPause" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onPlayPause" text="play" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" text="Heim" onAction="#onHeim"/>
+   </children>
+</VBox>
