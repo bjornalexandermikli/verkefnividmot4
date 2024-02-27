@@ -1,2 +1,2 @@
-media/Eftirpartý.wav Eftirpartý-192s 192000 media/mynd1.png
-media/Jupiter.wav Eftirpartý-212s 212000 media/mynd2.png
+media/EpicFortniteLag1.wav Fortnite1-must-play 212000 media/dab.png
+media/ytfortnite.wav Fortknight-epci-fyrir-yutoub 118000 media/fortnitemynd.png

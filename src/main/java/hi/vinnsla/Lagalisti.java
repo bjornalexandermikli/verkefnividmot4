@@ -31,15 +31,28 @@ public class Lagalisti {
         }
     }
 
+    /**
+     * Bætir við lag í listann
+     * @param lag lag
+     */
     public void add(Lag lag){
         listi.add(lag);
         index++;
     }
 
+    /**
+     * Skilar lagi úr listanum
+     * @param index index af lagi sem á að skila
+     * @return lag
+     */
     public Lag get(int index){
         return listi.get(index);
     }
 
+    /**
+     * Skilar listanum
+     * @return listi
+     */
     public ObservableList<Lag> getListi() {
         return listi;
     }

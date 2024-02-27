@@ -1,0 +1,13 @@
+.heima-bakgrunnur {
+    -fx-background-color: linear-gradient(to right, #001f8f, #0027b4);
+}
+
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.takki {
+    -fx-background-color: rgb(62, 62, 62);
+    -fx-text-fill: white;
+}

@@ -15,8 +15,8 @@ public class PlayerApplication extends Application {
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.HEIMA);
         stage.setScene(scene);
-        stage.setTitle("Tónlistarforrit");
-        stage.setWidth(800);
+        stage.setTitle("Audio Player");
+        stage.setWidth(400);
         stage.setHeight(600);
         stage.show();
     }

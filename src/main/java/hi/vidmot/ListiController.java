@@ -1,5 +1,7 @@
 package hi.vidmot;
 
+import hi.vinnsla.Lag;
+import hi.vinnsla.Lagalisti;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
@@ -7,14 +9,10 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-
-import java.io.File;
-
-import hi.vinnsla.Lag;
-import hi.vinnsla.Lagalisti;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.control.Button;
+
+import java.io.File;
 
 public class ListiController {
     @FXML
@@ -22,10 +20,12 @@ public class ListiController {
     @FXML
     private ImageView fxValidLagMynd;
     @FXML
-    private Button fxPlayPause;
+    private ImageView fxPlayPause;
     @FXML
     private ProgressBar fxProgressBar;
-    
+    @FXML
+    private ImageView fxTopImage;
+
     private Lagalisti listi;
     private Lag validLag;
     private MediaPlayer mediaPlayer;
@@ -39,8 +39,15 @@ public class ListiController {
         }
     }
 
-    public void setLagalisti(Lagalisti lagalisti) {
+    /**
+     * Setur lagalistann í listann og myndina í toppinn
+     * @param lagalisti listi af lögum
+     * @param mynd myndin sem á að setja á toppinn
+     */
+    public void setLagalisti(Lagalisti lagalisti, String mynd) {
         this.listi = lagalisti;
+        Image myndin = new Image(getClass().getResource(mynd).toExternalForm());
+        fxTopImage.setImage(myndin);
         if (listi != null) {
             fxListView.setItems(listi.getListi());
         }
@@ -54,8 +61,8 @@ public class ListiController {
     public void onValidLag(MouseEvent mouseEvent) {
         validLag = fxListView.getSelectionModel().getSelectedItem();
         System.out.println(validLag.getLag());
-        //Image mynd = new Image(validLag.getMynd());
-        //fxValidLagMynd.setImage(mynd);
+        Image mynd = new Image(getClass().getResource(validLag.getMynd()).toExternalForm());
+        fxValidLagMynd.setImage(mynd);
         spilaLag(validLag);
     }
 
@@ -84,8 +91,44 @@ public class ListiController {
             mediaPlayer.stop();
         }
         mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.currentTimeProperty().addListener((observable, old, newValue) -> 
-        fxProgressBar.setProgress(newValue.divide(Double.parseDouble(validLag.getLengd())).toMillis()));
+        mediaPlayer.currentTimeProperty().addListener((observable, old, newValue) ->
+                fxProgressBar.setProgress(newValue.divide(Double.parseDouble(validLag.getLengd())).toMillis()));
+        tengjaPlayTakka();
+        setStopTime();
+
+    }
+
+    /**
+     * Setur stopTime á mediaPlayer
+     * Þegar lag klárast þá fer það í næsta lag
+     */
+    private void setStopTime(){
+        mediaPlayer.setStopTime(mediaPlayer.getMedia().getDuration());
+        mediaPlayer.setOnEndOfMedia(this::naestaLag);
+    }
+
+    /**
+     * Fer í næsta lag í listanum
+     */
+    private void naestaLag(){
+        int index = fxListView.getSelectionModel().getSelectedIndex();
+        if(index < fxListView.getItems().size() - 1){
+            fxListView.getSelectionModel().select(index + 1);
+            onValidLag(null);
+        }
+    }
+
+    /**
+     * Tengir play/pause takka við mediaPlayer til að uppfæra mynd
+     */
+    private void tengjaPlayTakka(){
+        mediaPlayer.statusProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue == MediaPlayer.Status.PLAYING) {
+                fxPlayPause.setImage(new Image(getClass().getResource("media/pause.png").toExternalForm()));
+            } else {
+                fxPlayPause.setImage(new Image(getClass().getResource("media/play.png").toExternalForm()));
+            }
+        });
     }
 
     /**
@@ -98,15 +141,15 @@ public class ListiController {
         ViewSwitcher.switchTo(View.HEIMA);
     }
 
+    /**
+     * Sér um að spila eða pása lag
+     * @param actionEvent Ýtt á play/pause takka
+     */
     public void onPlayPause(ActionEvent actionEvent) {
         if(mediaPlayer.getStatus() == MediaPlayer.Status.PLAYING){
             mediaPlayer.pause();
-            fxPlayPause.getStyleClass().remove("play");
-            fxPlayPause.getStyleClass().add("pause");
         } else {
             mediaPlayer.play();
-            fxPlayPause.getStyleClass().remove("pause");
-            fxPlayPause.getStyleClass().add("play");
         }
     }
 }

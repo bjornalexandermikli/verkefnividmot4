@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Lagalistar {
 
     public static final String SKRA1 = "src/main/resources/hi/vidmot/media/lagalisti1.txt";
-    public static final String SKRA2 = "src/main/resources/hi/vidmot/media/lagalisti1.txt";
+    public static final String SKRA2 = "src/main/resources/hi/vidmot/media/lagalisti2.txt";
 
     private Lagalisti[] lagalisti = new Lagalisti[2];
     private int index = 0;
