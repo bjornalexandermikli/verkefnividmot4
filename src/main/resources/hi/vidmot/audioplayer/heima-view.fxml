@@ -15,7 +15,7 @@
     </padding>
     <VBox alignment="TOP_CENTER" prefHeight="7.0" prefWidth="200.0">
         <children>
-            <Button alignment="CENTER" onAction="#opnaAskrifandiView" prefHeight="26.0" prefWidth="219.0" text="Áskrifandi" />
+            <Button alignment="CENTER" onLogin="#opnaAskrifandiView" prefHeight="26.0" prefWidth="219.0" text="Áskrifandi" />
         </children>
     </VBox>
     <GridPane alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="101.0" prefWidth="200.0">

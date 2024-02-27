@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class lagaListar {
 
-    public static final String skra1 = "src/main/resources/hi/vidmot/media/lagalisti.txt";
+    public static final String skra1 = "src/main/resources/hi/vidmot/media/lagalisti1.txt";
 
     private lagaListi[] lagaListi = new lagaListi[2];
     private int index = 0;
