@@ -1,4 +1,4 @@
-package hi.vidmot.audioplayer;
+package hi.vidmot;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

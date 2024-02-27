@@ -1,4 +1,4 @@
-package Vinnsla;
+package hi.vinnsla;
 
 public class Lag {
     private String skra;
@@ -29,6 +29,7 @@ public class Lag {
         return mynd;
     }
 
+    @Override
     public String toString() {
         return lag;
     }

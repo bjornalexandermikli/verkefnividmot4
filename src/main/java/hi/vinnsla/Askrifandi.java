@@ -1,17 +1,16 @@
-package Vinnsla;
+package hi.vinnsla;
 
-public class askrifandi {
+public class Askrifandi {
     private String nafn;
-
-    public askrifandi() {
+    public Askrifandi(){
         this.nafn = "Óþekktur";
     }
 
-    public void set(String nafn) {
+    public void set(String nafn){
         this.nafn = nafn;
     }
 
-    public String get() {
+    public String get(){
         return this.nafn;
     }
 }

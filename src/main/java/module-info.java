@@ -1,9 +1,9 @@
-module hi.vidmot.audioplayer {
+module hi.vidmot {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;
 
-    opens hi.vidmot.audioplayer to javafx.fxml;
+    opens hi.vidmot to javafx.fxml;
 
-    exports hi.vidmot.audioplayer;
+    exports hi.vidmot;
 }
