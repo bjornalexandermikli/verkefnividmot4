@@ -1,3 +1,2 @@
-media/sadd.wav sad1-tapaði-í-fortnite-mp3 206000 media/mynd3.jpg
+media/sadd.wav sad1-tapaði-í-fortnite-mp3 206000 media/mynd3.png
 media/sad2.wav sad-2-kisi 139000 media/mynd4.png
-media/sad3.wav Fortknight-aftur-eftir-þetta-lag 274000 media/freddysad.png

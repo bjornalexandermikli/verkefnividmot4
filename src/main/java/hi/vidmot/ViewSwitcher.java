@@ -11,16 +11,18 @@ public class ViewSwitcher {
     private static Scene scene;
 
     /**
-     * Frumstillir Scene
-     * @param scene Scene
+     * Stillir upp senu
+     * 
+     * @param scene Sena
      */
     public static void setScene(Scene scene) {
         ViewSwitcher.scene = scene;
     }
 
     /**
-     * Skiptir um Scene
-     * @param view View sem á að byrta
+     * Skiptir milli sena
+     * 
+     * @param view Sjónarhorn sem er breytt
      */
     public static void switchTo(View view) {
         try {
@@ -33,10 +35,11 @@ public class ViewSwitcher {
     }
 
     /**
-     * Skiptir um Scene
-     * @param view View sem á að byrta
-     * @param lagalisti Lagalisti sem á að byrta
-     * @param mynd myndin sem á að setja á toppinn
+     * Skiptir milli sena
+     * 
+     * @param view      Sjónarhorn sem breytist
+     * @param lagalisti Listi sem á að sýna
+     * @param mynd      mynd
      */
     public static void switchTo(View view, Lagalisti lagalisti, String mynd) {
         try {

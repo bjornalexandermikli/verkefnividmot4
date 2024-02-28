@@ -10,11 +10,7 @@ public class Lagalistar {
     private Lagalisti[] lagalisti = new Lagalisti[2];
     private int index = 0;
 
-    /**
-     * Smiður fyrir Lagalistar
-     * Býr til tvö Lagalisti hlut með upplýsingum úr skránum SKRA1 og SKRA2
-     */
-    public Lagalistar(){
+    public Lagalistar() {
         Lagalisti lagalisti1 = new Lagalisti();
         try {
             lagalisti1.lesaLog(SKRA1);
@@ -31,19 +27,12 @@ public class Lagalistar {
         }
     }
 
-    /**
-     * Bætir Lagalisti við Lagalistar hlutinn
-     */
-    public void add(Lagalisti lagalisti){
+    public void add(Lagalisti lagalisti) {
         this.lagalisti[index] = lagalisti;
         index++;
     }
 
-    /**
-     * Skilar Lagalisti á ákveðnum stað í Lagalistar
-     */
-    public Lagalisti get(int index){
+    public Lagalisti get(int index) {
         return lagalisti[index];
     }
 }
-

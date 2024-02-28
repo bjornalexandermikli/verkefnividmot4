@@ -22,17 +22,13 @@ public class PlayerController {
         myndir[1] = "media/mynd2.png";
     }
 
-    /**
-     * Sér um að birta Dialog og fá nafn frá notanda
-     */
-    public void onLogin(){
-        // Birtum Dialog og fáum nafn frá notanda og setjum í Askrifanda
+    public void onLogin() {
         AskrifandiDialog d = new AskrifandiDialog(a);
         d.showAndWait();
         fxStatus.setText("Góðan daginn: " + a.get());
     }
 
-    public void onVeljaLista(ActionEvent actionEvent){
+    public void onVeljaLista(ActionEvent actionEvent) {
         Button b = (Button) actionEvent.getSource();
         int i = GridPane.getColumnIndex(b);
         ViewSwitcher.switchTo(View.LISTI, lagalistar.get(i), myndir[i]);

@@ -8,10 +8,11 @@ public class Lag {
 
     /**
      * Smiður fyrir Lag
-     * @param skra skrá
-     * @param lag lag
+     * 
+     * @param skra  skrá
+     * @param lag   lag
      * @param lengd lengd
-     * @param mynd mynd
+     * @param mynd  mynd
      */
     public Lag(String skra, String lag, String lengd, String mynd) {
         this.skra = skra;
@@ -20,34 +21,18 @@ public class Lag {
         this.mynd = mynd;
     }
 
-    /**
-     * Skilar skrá
-     * @return skrá
-     */
     public String getSkra() {
         return skra;
     }
 
-    /**
-     * Skilar lagi
-     * @return lag
-     */
     public String getLag() {
         return lag;
     }
 
-    /**
-     * Skilar lengd lags
-     * @return lengd
-     */
     public String getLengd() {
         return lengd;
     }
 
-    /**
-     * Skilar mynd
-     * @return mynd
-     */
     public String getMynd() {
         return mynd;
     }

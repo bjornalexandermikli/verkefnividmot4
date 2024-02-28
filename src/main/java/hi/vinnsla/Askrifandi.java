@@ -4,26 +4,30 @@ public class Askrifandi {
     private String nafn;
 
     /**
-     * Smiður fyrir Askrifanda
-     * frumstillir nafn sem "Óþekktur"
+     * Smiður fyrir Askrifanda hluti
+     * 
+     * 
+     * Byrjar sem unknown
      */
-    public Askrifandi(){
-        this.nafn = "Óþekktur notandi";
+    public Askrifandi() {
+        this.nafn = "Unknown user";
     }
 
     /**
-     * Setur nafn
-     * @param nafn nafn
+     * Setter fyrir nafn notanda
+     * 
+     * @param nafn nafnið
      */
-    public void set(String nafn){
+    public void set(String nafn) {
         this.nafn = nafn;
     }
 
     /**
-     * Skilar nafni
-     * @return nafn
+     * getter aðferð fyrir nafnið
+     * 
+     * @return nafnið
      */
-    public String get(){
+    public String get() {
         return this.nafn;
     }
 }

@@ -7,16 +7,18 @@ public enum View {
     private String fxml;
 
     /**
-     * Frumstillir fxml skrá
-     * @param fxml skrá
+     * endursetur fxml
+     * 
+     * @param fxml skráin
      */
     private View(String fxml) {
         this.fxml = fxml;
     }
 
     /**
-     * Skilar fxml skrá
-     * @return fxml skrá
+     * gefur fxml (skrá)
+     * 
+     * @return skráin
      */
     public String getFxml() {
         return fxml;
