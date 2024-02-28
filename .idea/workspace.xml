@@ -50,19 +50,21 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer [org.openjfx:javafx-maven-plugin:0.0.8:jlink].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.vidmot [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/bjornthorsteinsson/Desktop/2024/VIDMOT/AudioPlayer/src/main/resources/hi/vidmot/audioplayer&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bjornthorsteinsson/Desktop/2024/VIDMOT/AudioPlayer&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Maven.AudioPlayer [org.openjfx:javafx-maven-plugin:0.0.8:jlink].executor": "Run",
+    "Maven.AudioPlayer [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "Maven.vidmot [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.vidmot [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "Maven.vidmot [package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "/Users/bjornthorsteinsson/Desktop/2024/VIDMOT/AudioPlayer/src/main/resources/hi/vidmot/audioplayer",
+    "last_opened_file_path": "/Users/bjornthorsteinsson/Desktop/2024/VIDMOT/AudioPlayer",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/hi/vidmot/" />

@@ -58,7 +58,7 @@ public class ListiController {
     /**
      * velur lag
      * 
-     * @param mouseEvent Smellt á lag (vipmót)
+     * @param mouseEvent Smellt á lag (viðmót)
      */
     public void onValidLag(MouseEvent mouseEvent) {
         validLag = fxListView.getSelectionModel().getSelectedItem();

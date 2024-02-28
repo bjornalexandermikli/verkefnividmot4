@@ -1,2 +1,2 @@
-media/EpicFortniteLag1.wav Fortnite1-must-play 212000 media/dab.png
-media/ytfortnite.wav Fortknight-epci-fyrir-yutoub 118000 media/fortnitemynd.png
+media/EpicFortniteLag1.wav Fortnite1-must-play 3000 media/dab.png
+media/ytfortnite.wav Fortknight-epci-fyrir-yutoub 9000 media/fortnitemynd.png
